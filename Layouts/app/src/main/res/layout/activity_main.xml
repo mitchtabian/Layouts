@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tabian.com.layouts.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:id="@+id/banner"
+            android:src="@drawable/bahamas"
+            android:scaleType="centerCrop"/>
+
+
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/profilePic"
+            android:src="@drawable/profile_pic"
+            android:layout_alignBottom="@+id/linearLayout"/>
+
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/profilePic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/banner"
+            android:orientation="horizontal"
+            android:background="@drawable/border"
+            android:weightSum="100"
+            android:id="@+id/linearLayout">
+
+            <Button
+                android:background="@drawable/border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Timeline"
+                android:textSize="10sp"
+                android:layout_weight="20"/>
+            <Button
+                android:layout_weight="20"
+                android:textSize="10sp"
+                android:background="@drawable/border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                />
+            <Button
+                android:layout_weight="20"
+                android:textSize="10sp"
+                android:background="@drawable/border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Friends"
+                />
+            <Button
+                android:layout_weight="20"
+                android:textSize="10sp"
+                android:background="@drawable/border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Photos"
+
+                />
+            <Button
+                android:layout_weight="20"
+                android:textSize="10sp"
+                android:background="@drawable/border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More"
+                />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Mitch Tabian"
+            android:ems="10"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="55dp"
+            android:id="@+id/textName"
+            android:layout_alignBottom="@+id/banner"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="@drawable/border"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout2">
+
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/profile_pic"/>
+
+            <EditText
+                android:id="@+id/etPost"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="What's on your mind?"/>
+
+        </LinearLayout>
+
+        <Button
+            android:textSize="10sp"
+            android:text="Post"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/linearLayout2"/>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
